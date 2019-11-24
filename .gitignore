@@ -1,5 +1,5 @@
 # shared object build
-build/**
+*.so
 
 # Reversing project
 *.rep
