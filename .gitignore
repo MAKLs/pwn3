@@ -1,0 +1,19 @@
+# shared object build
+build/**
+
+# Reversing project
+*.rep
+*.lock*
+*.gpr
+
+# Python
+__pycache__
+
+# PwnAdventure3 game
+PwnAdventure3*
+GameServer
+MasterServer
+creds
+
+# Code
+.vscode
