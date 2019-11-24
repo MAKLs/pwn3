@@ -8,6 +8,8 @@ build/**
 
 # Python
 __pycache__
+#  ignore captures
+*.txt
 
 # PwnAdventure3 game
 PwnAdventure3*
