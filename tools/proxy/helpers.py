@@ -7,7 +7,6 @@ from queue import Queue
 
 MASTER_PORT = 3333
 GAME_PORT_RANGE = (port for port in range(3000, 3005))
-DESTINATION_HOST = None
 BUFSIZE = 4096
 ENCODING = 'utf-8'
 PACKET_QUEUE = Queue(-1)
