@@ -1,5 +1,6 @@
-# shared object build
+# Build and artifacts
 *.so
+*.o
 
 # Reversing project
 *.rep
