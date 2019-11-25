@@ -20,3 +20,8 @@ creds
 
 # Code
 .vscode
+
+# Game readmes
+client/README*
+server/README*
+setup/README*
