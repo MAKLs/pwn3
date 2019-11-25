@@ -18,12 +18,12 @@ ENV PWN3=/opt/pwn3
 
 RUN useradd -ms /bin/bash pwn3
 
-ADD --chown=pwn3 server $PWN3/server
-ADD --chown=pwn3 setup $PWN3/setup
+COPY server $PWN3/server
+COPY setup $PWN3/setup
 
 # Initialize database for PwnAdventure 3
 USER postgres
-
+RUN ls -al $PWN3/
 RUN /etc/init.d/postgresql start &&\
     psql -f $PWN3/setup/init.sql -d template1 &&\
     psql -f  $PWN3/server/MasterServer/initdb.sql -d master &&\

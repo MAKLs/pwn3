@@ -4,8 +4,6 @@ ENV PWN3=/opt/pwn3
 
 RUN useradd -ms /bin/bash pwn3
 
-ADD --chown=pwn3 client $PWN3/client
-
 # Binary must be run from this directory
 WORKDIR $PWN3/client/PwnAdventure3_Data/PwnAdventure3/PwnAdventure3/Binaries/Linux
 CMD ["./PwnAdventure3Server"]
